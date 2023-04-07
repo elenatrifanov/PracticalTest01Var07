@@ -11,12 +11,12 @@
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:rowCount="3"
-        android:columnCount="3"
+        android:rowCount="4"
+        android:columnCount="4"
         android:layout_gravity="fill_horizontal">
 
-        <EditText
-            android:id="@+id/top_left"
+        <TextView
+            android:id="@+id/top_left_text"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -25,18 +25,18 @@
             android:layout_column="0"
             android:layout_gravity="start"/>
 
-        <EditText
-            android:id="@+id/top_right"
+        <TextView
+            android:id="@+id/top_right_text"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:layout_alignParentRight="true"
             android:layout_row="0"
-            android:layout_column="2"
+            android:layout_column="3"
             android:layout_gravity="end"/>
 
-        <EditText
-            android:id="@+id/bottom_left"
+        <TextView
+            android:id="@+id/bottom_left_text"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -46,24 +46,36 @@
             android:layout_column="0"
             android:layout_gravity="start" />
 
-        <EditText
-            android:id="@+id/bottom_right"
+        <TextView
+            android:id="@+id/bottom_right_text"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:layout_alignParentRight="true"
             android:layout_below="@id/top_right"
             android:layout_row="2"
-            android:layout_column="2"
+            android:layout_column="3"
             android:layout_gravity="end"/>
 
-    </GridLayout>
     <Button
-        android:id="@+id/set"
-        android:layout_gravity="center_horizontal"
+        android:id="@+id/sum"
+        android:layout_gravity="start"
         android:enabled="false"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:text="@string/set"/>
+        android:layout_row="3"
+        android:layout_column="0"
+        android:text="@string/suma"/>
+
+    <Button
+        android:id="@+id/product"
+        android:layout_gravity="end"
+        android:enabled="false"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_row="3"
+        android:layout_column="3"
+        android:text="@string/product"/>
+    </GridLayout>
 
 </LinearLayout>
